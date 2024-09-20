@@ -28,7 +28,10 @@ namespace Dapper_Demo
 
         private void btnObtenerPorId_Click(object sender, EventArgs e)
         {
+            var cliente = customerR.ObtenerPorId(txtObtenerId.Text);
+            dgvObtenerTodo.DataSource = new List<Customers> { cliente };
 
+            
         }
     }
 }

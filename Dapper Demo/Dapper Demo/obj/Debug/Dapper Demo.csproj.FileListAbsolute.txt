@@ -13,3 +13,18 @@ D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 2\Dapp
 D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 2\Dapper Demo\Dapper Demo\obj\Debug\Dapper Demo.csproj.CopyComplete
 D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 2\Dapper Demo\Dapper Demo\obj\Debug\Dapper Demo.exe
 D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 2\Dapper Demo\Dapper Demo\obj\Debug\Dapper Demo.pdb
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 2\Guias-Dapper\Dapper Demo\Dapper Demo\bin\Debug\Dapper Demo.exe.config
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 2\Guias-Dapper\Dapper Demo\Dapper Demo\bin\Debug\Dapper Demo.exe
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 2\Guias-Dapper\Dapper Demo\Dapper Demo\bin\Debug\Dapper Demo.pdb
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 2\Guias-Dapper\Dapper Demo\Dapper Demo\bin\Debug\AccesoDatos.dll
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 2\Guias-Dapper\Dapper Demo\Dapper Demo\bin\Debug\Dapper.dll
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 2\Guias-Dapper\Dapper Demo\Dapper Demo\bin\Debug\AccesoDatos.pdb
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 2\Guias-Dapper\Dapper Demo\Dapper Demo\bin\Debug\Dapper.xml
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 2\Guias-Dapper\Dapper Demo\Dapper Demo\obj\Debug\Dapper Demo.csproj.AssemblyReference.cache
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 2\Guias-Dapper\Dapper Demo\Dapper Demo\obj\Debug\Dapper_Demo.Form1.resources
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 2\Guias-Dapper\Dapper Demo\Dapper Demo\obj\Debug\Dapper_Demo.Properties.Resources.resources
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 2\Guias-Dapper\Dapper Demo\Dapper Demo\obj\Debug\Dapper Demo.csproj.GenerateResource.cache
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 2\Guias-Dapper\Dapper Demo\Dapper Demo\obj\Debug\Dapper Demo.csproj.CoreCompileInputs.cache
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 2\Guias-Dapper\Dapper Demo\Dapper Demo\obj\Debug\Dapper Demo.csproj.CopyComplete
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 2\Guias-Dapper\Dapper Demo\Dapper Demo\obj\Debug\Dapper Demo.exe
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 2\Guias-Dapper\Dapper Demo\Dapper Demo\obj\Debug\Dapper Demo.pdb

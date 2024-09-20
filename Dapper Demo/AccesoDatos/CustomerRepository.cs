@@ -33,6 +33,28 @@ namespace AccesoDatos
             }
         }
 
-       
+        public Customers ObtenerPorId(string id)
+        {
+            using (var conexion = DataBase.GetSqlConnection())
+            {
+                String selectForId = "";
+                selectForId = selectForId + "SELECT [CustomerID] " + "\n";
+                selectForId = selectForId + "      ,[CompanyName] " + "\n";
+                selectForId = selectForId + "      ,[ContactName] " + "\n";
+                selectForId = selectForId + "      ,[ContactTitle] " + "\n";
+                selectForId = selectForId + "      ,[Address] " + "\n";
+                selectForId = selectForId + "      ,[City] " + "\n";
+                selectForId = selectForId + "      ,[Region] " + "\n";
+                selectForId = selectForId + "      ,[PostalCode] " + "\n";
+                selectForId = selectForId + "      ,[Country] " + "\n";
+                selectForId = selectForId + "      ,[Phone] " + "\n";
+                selectForId = selectForId + "      ,[Fax] " + "\n";
+                selectForId = selectForId + "  FROM [dbo].[Customers] " + "\n";
+                selectForId = selectForId + "  WHERE CustomerID = @CustomerID]";
+
+                var cliente = conexion.QueryFirstOrDefault<Customers>(selectForId, new { CustomerID = id });
+                return cliente;
+            }
+        }
     }
 }
