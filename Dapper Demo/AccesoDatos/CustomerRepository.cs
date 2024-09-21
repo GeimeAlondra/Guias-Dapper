@@ -52,8 +52,38 @@ namespace AccesoDatos
                 selectForId = selectForId + "  FROM [dbo].[Customers] " + "\n";
                 selectForId = selectForId + "  WHERE CustomerID = @CustomerID]";
 
-                var cliente = conexion.QueryFirstOrDefault<Customers>(selectForId, new { CustomerID = id });
-                return cliente;
+                var Cliente = conexion.QueryFirstOrDefault<Customers>(selectForId, new { CustomerID = id });
+                return Cliente;
+            }
+        }
+
+        public int InsertarCliente(Customers customer)
+        {
+            using (var conexion = DataBase.GetSqlConnection())
+            {
+                String Insertar = "";
+                Insertar = Insertar + "INSERT INTO [dbo].[Customers] " + "\n";
+                Insertar = Insertar + "           ([CustomerID] " + "\n";
+                Insertar = Insertar + "           ,[CompanyName] " + "\n";
+                Insertar = Insertar + "           ,[ContactName] " + "\n";
+                Insertar = Insertar + "           ,[ContactTitle] " + "\n";
+                Insertar = Insertar + "           ,[Address]) " + "\n";
+                Insertar = Insertar + "     VALUES " + "\n";
+                Insertar = Insertar + "           (@customerID " + "\n";
+                Insertar = Insertar + "           ,@companyName " + "\n";
+                Insertar = Insertar + "           ,@contactName " + "\n";
+                Insertar = Insertar + "           ,@contactTitle " + "\n";
+                Insertar = Insertar + "           ,@address)";
+               
+                var insertadas = conexion.Execute(Insertar, new
+                {
+                    customerID = customer.CustomerID,
+                    companyName = customer.CompanyName,
+                    contactName = customer.ContactName,
+                    contactTitle = customer.ContactTitle,
+                    address = customer.Address,
+                });
+                return insertadas;
             }
         }
     }
