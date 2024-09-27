@@ -37,22 +37,22 @@ namespace AccesoDatos
         {
             using (var conexion = DataBase.GetSqlConnection())
             {
-                String selectForId = "";
-                selectForId = selectForId + "SELECT [CustomerID] " + "\n";
-                selectForId = selectForId + "      ,[CompanyName] " + "\n";
-                selectForId = selectForId + "      ,[ContactName] " + "\n";
-                selectForId = selectForId + "      ,[ContactTitle] " + "\n";
-                selectForId = selectForId + "      ,[Address] " + "\n";
-                selectForId = selectForId + "      ,[City] " + "\n";
-                selectForId = selectForId + "      ,[Region] " + "\n";
-                selectForId = selectForId + "      ,[PostalCode] " + "\n";
-                selectForId = selectForId + "      ,[Country] " + "\n";
-                selectForId = selectForId + "      ,[Phone] " + "\n";
-                selectForId = selectForId + "      ,[Fax] " + "\n";
-                selectForId = selectForId + "  FROM [dbo].[Customers] " + "\n";
-                selectForId = selectForId + "  WHERE CustomerID = @CustomerID]";
+                String selectForID = "";
+                selectForID = selectForID + "SELECT [CustomerID] " + "\n";
+                selectForID = selectForID + "      ,[CompanyName] " + "\n";
+                selectForID = selectForID + "      ,[ContactName] " + "\n";
+                selectForID = selectForID + "      ,[ContactTitle] " + "\n";
+                selectForID = selectForID + "      ,[Address] " + "\n";
+                selectForID = selectForID + "      ,[City] " + "\n";
+                selectForID = selectForID + "      ,[Region] " + "\n";
+                selectForID = selectForID + "      ,[PostalCode] " + "\n";
+                selectForID = selectForID + "      ,[Country] " + "\n";
+                selectForID = selectForID + "      ,[Phone] " + "\n";
+                selectForID = selectForID + "      ,[Fax] " + "\n";
+                selectForID = selectForID + "  FROM [dbo].[Customers] " + "\n";
+                selectForID = selectForID + "  WHERE CustomerID = @CustomerID";
 
-                var Cliente = conexion.QueryFirstOrDefault<Customers>(selectForId, new { CustomerID = id });
+                var Cliente = conexion.QueryFirstOrDefault<Customers>(selectForID, new { CustomerID = id });
                 return Cliente;
             }
         }
@@ -84,6 +84,31 @@ namespace AccesoDatos
                     address = customer.Address,
                 });
                 return insertadas;
+            }
+        }
+
+        public int ActualizarCliente(Customers customers)
+        {
+            using (var conexion = DataBase.GetSqlConnection())
+            {
+                String UpdateCustomer = "";
+                UpdateCustomer = UpdateCustomer + "UPDATE [dbo].[Customers] " + "\n";
+                UpdateCustomer = UpdateCustomer + "   SET [CustomerID] = @CustomerID " + "\n";
+                UpdateCustomer = UpdateCustomer + "      ,[CompanyName] = @CompanyName " + "\n";
+                UpdateCustomer = UpdateCustomer + "      ,[ContactName] = @ContactName " + "\n";
+                UpdateCustomer = UpdateCustomer + "      ,[ContactTitle] = @ContactTitle " + "\n";
+                UpdateCustomer = UpdateCustomer + "      ,[Address] = @Address " + "\n";
+                UpdateCustomer = UpdateCustomer + " WHERE CustomerID = @CustomerID";
+                var actualizadas =
+                    conexion.Execute(UpdateCustomer, new
+                    {
+                        customerID = customers.CustomerID,
+                        companyName = customers.CompanyName,
+                        contactName = customers.ContactName,
+                        contactTitle = customers.ContactTitle,
+                        address = customers.Address
+                    });
+                return actualizadas;
             }
         }
     }
