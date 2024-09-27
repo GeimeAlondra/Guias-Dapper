@@ -74,5 +74,11 @@ namespace Dapper_Demo
             dgvObtenerTodo.DataSource = new List<Customers> { cliente };
             MessageBox.Show($"Filas actualizadas {actualizados} - {clienteActualizado.CustomerID}");
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            var eliminadas = customerR.EliminarCliente(txtCustomerId.Text);
+            MessageBox.Show($"Se ha eliminado {eliminadas} filas de manera correcta");
+        }
     }
 }
